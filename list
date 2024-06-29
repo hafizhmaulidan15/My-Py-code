@@ -1,0 +1,29 @@
+'''
+BIKIN LIST DENGAN MINTA INPUT
+'''
+
+masukkan = input("masukkan kata dengan kapital pada huruf depan dipisah dengan koma (Apel, Nanas, Durian):\n").split(", ")
+
+n = len(masukkan)
+
+masukkan.sort()
+
+tambahan = []
+
+for i in range(0,n):
+	if ((i>0)and(masukkan[i-1]==masukkan[i])):
+		tambahan.append(masukkan[i])
+		continue
+	if ((i==n-1)and(len(tambahan)==0)):
+		print(masukkan[i])
+		break
+	print(masukkan[i], end=", ")
+	
+for i in range(0,len(tambahan)):
+	print(tambahan[i], end="")
+	if (i==len(tambahan)-1):
+		print()
+		break
+	print("", end=", ")
+	
+print("Jumlah data di dalam List adalah " + str(n))
