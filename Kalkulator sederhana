@@ -1,0 +1,77 @@
+def jumlah(a,b) :
+    x = a + b
+    print('Hasilnya adalah', x)
+    return x
+
+def kurang(a,b) :
+    x = a - b
+    print('Hasilnya adalah', x)
+    return x
+
+def kali(a,b) :
+    x = a * b
+    print('Hasilnya adalah', x)
+    return x
+
+def bagi(a,b) :
+    x = a / b
+    print('Hasilnya adalah', x)
+    return x
+
+def pangkat(a,b):
+    x = a ** b
+    print('hasilnya adalah', x)
+    return x
+
+def pembulatan(a,b):
+    x = a // b
+    print('hasilnya adalah', x)
+    return x
+
+def sisa(a,b):
+    x = a % b
+    print('hasilnya adalah', x)
+    return x
+
+print("Kalkulator sederhana")
+print("1. Penjumlahan\n" "2. Pengurangan\n" "3. Perkalian\n" "4. Pembagian\n" "5. Perpangkatan\n" "6. pembualatan pembagian\n" "7. sisa dari hasil pembagian\n")
+pilihan = int(input('Masukkan pilihan anda : '))
+
+if pilihan == 1 :
+    print('Anda memilih operasi penjumlahan')
+    b1 = int(input('Masukkan angka pertama : '))
+    b2 = int(input('Masukkan angka kedua : '))
+    jumlah(b1,b2)
+elif pilihan == 2 :
+    print('Anda memilih operasi pengurangan')
+    b1 = int(input('Masukkan angka pertama : '))
+    b2 = int(input('Masukkan angka kedua : '))
+    kurang(b1,b2)
+elif pilihan == 3 :
+    print('Anda memilih operasi perkalian')
+    b1 = int(input('Masukkan angka pertama : '))
+    b2 = int(input('Masukkan angka kedua : '))
+    kali(b1,b2)   
+elif pilihan == 4 :
+    print('Anda memilih operasi pembagian')
+    b1 = int(input('Masukkan angka pertama : '))
+    b2 = int(input('Masukkan angka kedua : '))
+    bagi(b1,b2) 
+elif pilihan == 5 :
+    print('Anda memilih operasi perpangkatan')
+    b1 = int(input('Masukkan angka yang akan di pangkatkan : '))
+    b2 = int(input('Masukkan angka pangkatnya : '))
+    pangkat(b1,b2)
+elif pilihan == 6 :
+    print('Anda memilih operasi pembualatan pembagian')
+    b1 = int(input('Masukkan angka yang akan di pangkatkan : '))
+    b2 = int(input('Masukkan angka pangkatnya : '))
+    pembulatan(b1,b2)
+elif pilihan == 7 :
+    print('Anda memilih operasi sisa dari hasil pembagian')
+    b1 = int(input('Masukkan angka yang akan di pangkatkan : '))
+    b2 = int(input('Masukkan angka pangkatnya : '))
+    sisa(b1,b2)
+
+else:
+    print('maaf yang anda pilih tidak ada di daftar')
